@@ -1,0 +1,121 @@
+import requests as req
+import fake_proxy as f_p
+import sys
+import socket
+from threading import Thread
+
+import design
+import dialog_design
+from PySide2 import QtWidgets
+from PySide2 import QtCore
+# from PySide2 import QtGui
+
+def responser(a, p):
+	"""
+	check response from server
+	:param a: URL address;
+	:param p: proxy for requests;
+	:return: bool value from response;
+	"""
+	response = req.get(a, proxies = p)
+	return True if response.status_code == 200 else False
+
+
+class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
+	def __init__(self):
+		super().__init__()
+		self.setupUi(self)
+		self.start_button.clicked.connect(self.main)
+		self.stop_button.clicked.connect(self.stop)
+		self.pause_continue_button.clicked.connect(self.continues)
+		self.check_button.clicked.connect(self.checker)
+		self.start_button.setDisabled(True)
+		self.stop_button.setDisabled(True)
+		self.pause_continue_button.setDisabled(True)
+
+	def main(self):
+		""" Requests"""
+		intermediate_value = self.URL_address.text()
+		k = 1
+		if 'https://' not in intermediate_value:
+			address = 'https://' + intermediate_value
+		while True:
+			try:
+				proxy = f_p.get(proxy_type = 'https')[0]
+				if responser(address, proxy):
+					print(address,  'Всё прошло успешно, попытка №{}\r'.format(k), end = '\r')
+					k += 1
+					continue
+				else:
+					break
+			except req.ConnectionError:
+				address = 'http://' + intermediate_value
+				try:
+					proxy = f_p.get(proxy_type = 'http')[0]
+					responser(address, proxy)
+				except req.ConnectionError:
+############ message about connection is failed ###################################
+					pass
+			except ConnectionError:
+				print('Ошибка соединения\r')
+
+	def checker(self):
+		if self.get_ip_address() or self.get_host_name():
+			self.check_button.setEnabled(True)
+			self.start_button.setEnabled(True)
+			self.check_button.setDisabled(True)
+
+	def get_ip_address(self):
+		try:
+			ip = socket.gethostbyname(self.URL_address.text())
+			if ip == '0.0.0.0':
+				############ message about connection is failed ###################################
+				return False
+			self.IP_address.setText(ip)
+			return True
+		except socket.gaierror:
+			############ message about connection is failed ###################################
+			return False
+
+	def get_host_name(self):
+		try:
+			if self.IP_address.text() == '':
+				############ message about connection is failed ###################################
+				return False
+			hostname = socket.gethostbyaddr(self.IP_address.text())[0]
+			self.URL_address.setText(hostname)
+			return True
+		except socket.herror:
+			############ message about connection is failed ###################################
+			return False
+
+	def stop(self):
+		pass
+
+	def continues(self):
+		pass
+
+
+class FirstWindow(QtWidgets.QDialog, dialog_design.Ui_MainWindow):
+	def __init__(self):
+		super().__init__()
+		self.setupUi(self)
+		self.welcome_button.clicked.connect(self.hiding)
+		self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
+
+	@staticmethod
+	def hiding():
+		# global welcoming
+		my_main_window.show()
+		welcoming.destroy()
+
+def main():
+	global my_main_window, welcoming, app
+
+
+if __name__ == '__main__':
+	app = QtWidgets.QApplication()
+	welcoming = FirstWindow()
+	my_main_window = MainApp()
+	welcoming.show()
+	sys.exit(app.exec_())
