@@ -1,13 +1,15 @@
-import requests as req
-import fake_proxy as f_p
-import sys
 import socket
-from threading import Thread
+import sys
+
+import fake_proxy as f_p
+import requests as req
+from PySide2 import QtCore
+from PySide2 import QtWidgets
 
 import design
 import dialog_design
-from PySide2 import QtWidgets
-from PySide2 import QtCore
+
+
 # from PySide2 import QtGui
 
 def responser(a, p):
@@ -34,6 +36,11 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 		self.pause_continue_button.setDisabled(True)
 
 	def main(self):
+		global ip, hostname
+		if self.URL_address.text() != hostname or self.IP_address.text() != ip:
+			self.start_button.setDisabled(True)
+			self.check_button.setEnabled(True)
+			return False
 		""" Requests"""
 		intermediate_value = self.URL_address.text()
 		k = 1
@@ -60,12 +67,16 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 				print('Ошибка соединения\r')
 
 	def checker(self):
+		self.check_button.setEnabled(True)
+		self.start_button.setDisabled(True)
+		self.stop_button.setDisabled(True)
+		self.pause_continue_button.setDisabled(True)
 		if self.get_ip_address() or self.get_host_name():
-			self.check_button.setEnabled(True)
 			self.start_button.setEnabled(True)
 			self.check_button.setDisabled(True)
 
 	def get_ip_address(self):
+		global ip
 		try:
 			ip = socket.gethostbyname(self.URL_address.text())
 			if ip == '0.0.0.0':
@@ -78,6 +89,7 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 			return False
 
 	def get_host_name(self):
+		global hostname
 		try:
 			if self.IP_address.text() == '':
 				############ message about connection is failed ###################################
