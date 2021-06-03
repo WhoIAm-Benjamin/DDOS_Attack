@@ -39,9 +39,7 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 
 	def main(self):
 		global ip, hostname
-		hn = hostname
-		ip_main = ip
-		if self.URL_address.text() != hn or self.IP_address.text() != ip_main:
+		if self.URL_address.text() != hostname or self.IP_address.text() != ip:
 			self.start_button.setDisabled(True)
 			self.check_button.setEnabled(True)
 			return False
