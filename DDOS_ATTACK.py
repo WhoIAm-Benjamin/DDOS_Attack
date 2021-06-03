@@ -24,6 +24,8 @@ def responser(a, p):
 
 
 class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
+	ip = None
+	hostname = None
 	def __init__(self):
 		super().__init__()
 		self.setupUi(self)
@@ -37,7 +39,9 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 
 	def main(self):
 		global ip, hostname
-		if self.URL_address.text() != hostname or self.IP_address.text() != ip:
+		ip_main = ip
+		hn = hostname
+		if self.URL_address.text() != hn or self.IP_address.text() != ip_main:
 			self.start_button.setDisabled(True)
 			self.check_button.setEnabled(True)
 			return False
@@ -61,7 +65,7 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 					proxy = f_p.get(proxy_type = 'http')[0]
 					responser(address, proxy)
 				except req.ConnectionError:
-############ message about connection is failed ###################################
+					############ message about connection is failed ###################################
 					pass
 			except ConnectionError:
 				print('Ошибка соединения\r')
@@ -71,10 +75,12 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 		self.start_button.setDisabled(True)
 		self.stop_button.setDisabled(True)
 		self.pause_continue_button.setDisabled(True)
-		if self.get_ip_address() or self.get_host_name():
+		if self.get_ip_address():
 			self.start_button.setEnabled(True)
 			self.check_button.setDisabled(True)
-
+		if self.get_host_name():
+			self.start_button.setEnabled(True)
+			self.check_button.setDisabled(True)
 	def get_ip_address(self):
 		global ip
 		try:
@@ -83,7 +89,7 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 				############ message about connection is failed ###################################
 				return False
 			self.IP_address.setText(ip)
-			return True
+			return ip
 		except socket.gaierror:
 			############ message about connection is failed ###################################
 			return False
@@ -96,7 +102,7 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 				return False
 			hostname = socket.gethostbyaddr(self.IP_address.text())[0]
 			self.URL_address.setText(hostname)
-			return True
+			return hostname
 		except socket.herror:
 			############ message about connection is failed ###################################
 			return False
