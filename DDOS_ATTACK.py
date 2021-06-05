@@ -73,12 +73,13 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 		self.start_button.setDisabled(True)
 		self.stop_button.setDisabled(True)
 		self.pause_continue_button.setDisabled(True)
-		if self.get_ip_address():
-			self.start_button.setEnabled(True)
-			self.check_button.setDisabled(True)
 		if self.get_host_name():
 			self.start_button.setEnabled(True)
 			self.check_button.setDisabled(True)
+		if self.get_ip_address():
+			self.start_button.setEnabled(True)
+			self.check_button.setDisabled(True)
+
 	def get_ip_address(self):
 		global ip
 		try:
