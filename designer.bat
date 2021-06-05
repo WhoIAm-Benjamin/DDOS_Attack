@@ -5,4 +5,6 @@ pyuic5 ".ui & .qrc files/dialog_design.ui" -o dialog_design.pyw
 echo "dialog_design.py complete"
 pyrcc5 ".ui & .qrc files/picture.qrc" -o picture_rc.pyw
 echo "picture_rc.py complete"
+pyuic5 ".ui & .qrc files/error.ui" -o error.pyw
+echo "error.pyw complete"
 set/p "cho=>"

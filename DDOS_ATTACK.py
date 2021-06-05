@@ -27,6 +27,10 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 	ip = None
 	hostname = None
 	def __init__(self):
+		"""
+		Definition of interface
+		:return: None;
+		"""
 		super().__init__()
 		self.setupUi(self)
 		self.start_button.clicked.connect(self.main)
@@ -38,6 +42,11 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 		self.pause_continue_button.setDisabled(True)
 
 	def main(self):
+		"""
+		Main function in application;
+		Performs a DDOS attack on the target host;
+		:return: None;
+		"""
 		global ip, hostname
 		if self.URL_address.text() != hostname or self.IP_address.text() != ip:
 			self.start_button.setDisabled(True)

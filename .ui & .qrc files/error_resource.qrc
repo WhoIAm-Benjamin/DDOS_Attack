@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>design_for_error_window.png</file>
+  </qresource>
+</RCC>
