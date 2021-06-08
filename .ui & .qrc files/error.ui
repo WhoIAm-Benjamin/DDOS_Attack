@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>331</width>
-    <height>279</height>
+    <height>302</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>331</width>
-    <height>279</height>
+    <width>10</width>
+    <height>10</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>331</width>
-    <height>279</height>
+    <height>302</height>
    </size>
   </property>
   <property name="font">
@@ -34,8 +34,57 @@
    <string>Error</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/newPrefix/design_for_error_window.png);</string>
+   <string notr="true">background-color: rgb(104, 201, 205);</string>
   </property>
+  <widget class="QPushButton" name="ok_button">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>246</y>
+     <width>311</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cambria</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(89, 172, 175)</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="check_label">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>0</y>
+     <width>307</width>
+     <height>246</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/newPrefix/design_for_error_window.png)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+  </widget>
  </widget>
  <resources>
   <include location="error_resource.qrc"/>

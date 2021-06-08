@@ -35,7 +35,7 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background: rgb(179, 30, 48)</string>
+   <string notr="true">background: rgb(203, 49, 70)</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="URL_address">

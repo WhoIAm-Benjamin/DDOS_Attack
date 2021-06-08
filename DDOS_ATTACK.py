@@ -8,6 +8,7 @@ from PySide2 import QtWidgets
 
 import design
 import dialog_design
+import error
 
 
 # from PySide2 import QtGui
@@ -26,6 +27,7 @@ def responser(a, p):
 class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 	ip = None
 	hostname = None
+	global errors
 	def __init__(self):
 		"""
 		Definition of interface
@@ -94,25 +96,29 @@ class MainApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
 		try:
 			ip = socket.gethostbyname(self.URL_address.text())
 			if ip == '0.0.0.0':
-				############ message about connection is failed ###################################
+				errors.show()
+				self.hide()
 				return False
 			self.IP_address.setText(ip)
 			return ip
 		except socket.gaierror:
-			############ message about connection is failed ###################################
+			errors.show()
+			self.hide()
 			return False
 
 	def get_host_name(self):
 		global hostname
 		try:
 			if self.IP_address.text() == '':
-				############ message about connection is failed ###################################
+				errors.show()
+				self.hide()
 				return False
 			hostname = socket.gethostbyaddr(self.IP_address.text())[0]
 			self.URL_address.setText(hostname)
 			return hostname
 		except socket.herror:
-			############ message about connection is failed ###################################
+			errors.show()
+			self.hide()
 			return False
 
 	def stop(self):
@@ -131,17 +137,25 @@ class FirstWindow(QtWidgets.QDialog, dialog_design.Ui_MainWindow):
 
 	@staticmethod
 	def hiding():
-		# global welcoming
 		my_main_window.show()
 		welcoming.destroy()
 
-def main():
-	global my_main_window, welcoming, app
+
+class Errors(QtWidgets.QDialog, error.Ui_error_window):
+	def __init__(self):
+		super().__init__()
+		self.setupUi(self)
+		self.ok_button.clicked.connect(self.close)
+
+	def close(self):
+		self.hide()
+		my_main_window.show()
 
 
 if __name__ == '__main__':
 	app = QtWidgets.QApplication()
 	welcoming = FirstWindow()
 	my_main_window = MainApp()
+	errors = Errors()
 	welcoming.show()
 	sys.exit(app.exec_())

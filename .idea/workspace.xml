@@ -4,9 +4,17 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43daa81-0716-434c-b370-abd7a267d7d1" name="Default" comment="definition &quot;main&quot; corrected">
+    <list default="true" id="e43daa81-0716-434c-b370-abd7a267d7d1" name="Default" comment="added class &quot;Errors&quot;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/error.pyw" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/error_resource_rc.pyw" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ui &amp; .qrc files/design.ui" afterPath="$PROJECT_DIR$/.ui &amp; .qrc files/design.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ui &amp; .qrc files/design_for_error_window.png" afterPath="$PROJECT_DIR$/.ui &amp; .qrc files/design_for_error_window.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ui &amp; .qrc files/error.ui" afterPath="$PROJECT_DIR$/.ui &amp; .qrc files/error.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design_1/.ui &amp; .qrc files/design.ui" afterPath="$PROJECT_DIR$/design_1/.ui &amp; .qrc files/design.ui" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DDOS_ATTACK.py" afterPath="$PROJECT_DIR$/DDOS_ATTACK.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design.py" afterPath="$PROJECT_DIR$/design.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/designer.bat" afterPath="$PROJECT_DIR$/designer.bat" />
     </list>
     <ignored path="DDOS_Attack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,19 +38,21 @@
       <file leaf-file-name="DDOS_ATTACK.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DDOS_ATTACK.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66952056">
-              <caret line="73" column="43" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.859375">
+              <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#552#972#0" expanded="true" />
-                <element signature="e#2050#2415#0" expanded="true" />
-                <element signature="e#2446#2817#0" expanded="true" />
-                <element signature="e#2847#3256#0" expanded="true" />
-                <element signature="e#3277#3281#0" expanded="true" />
-                <element signature="e#3307#3311#0" expanded="true" />
-                <element signature="e#3404#3547#0" expanded="true" />
-                <element signature="e#3581#3645#0" expanded="true" />
-                <element signature="e#3660#3697#0" expanded="true" />
+                <element signature="e#580#1000#0" expanded="true" />
+                <element signature="e#1021#2054#0" expanded="true" />
+                <element signature="e#2078#2443#0" expanded="true" />
+                <element signature="e#2474#2736#0" expanded="true" />
+                <element signature="e#2766#3066#0" expanded="true" />
+                <element signature="e#3087#3091#0" expanded="true" />
+                <element signature="e#3117#3121#0" expanded="true" />
+                <element signature="e#3214#3357#0" expanded="true" />
+                <element signature="e#3391#3434#0" expanded="true" />
+                <element signature="e#3516#3600#0" expanded="true" />
+                <element signature="e#3622#3657#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/design.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -62,8 +72,32 @@
         <entry file="file://$PROJECT_DIR$/dialog_design.pyw">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding>
+                <element signature="e#432#2326#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="picture_rc.pyw" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/picture_rc.pyw">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.pyw" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/error.pyw">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding>
+                <element signature="e#428#1874#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,9 +120,10 @@
         <option value="$PROJECT_DIR$/DDOS_ATTACK.pyw" />
         <option value="$PROJECT_DIR$/dialog_design.py" />
         <option value="$PROJECT_DIR$/picture_rc.py" />
-        <option value="$PROJECT_DIR$/picture_rc.pyw" />
         <option value="$PROJECT_DIR$/design.py" />
         <option value="$PROJECT_DIR$/dialog_design.pyw" />
+        <option value="$PROJECT_DIR$/picture_rc.pyw" />
+        <option value="$PROJECT_DIR$/error.pyw" />
         <option value="$PROJECT_DIR$/DDOS_ATTACK.py" />
       </list>
     </option>
@@ -401,21 +436,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24130106" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24508321" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32789558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40359476" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40293637" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967373" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -468,63 +503,63 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>57</line>
+          <line>59</line>
           <option name="timeStamp" value="221" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>59</line>
+          <line>61</line>
           <option name="timeStamp" value="222" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>60</line>
+          <line>62</line>
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>109</line>
-          <option name="timeStamp" value="231" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>53</line>
+          <line>55</line>
           <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>61</line>
+          <line>63</line>
           <option name="timeStamp" value="238" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>69</line>
+          <line>71</line>
           <option name="timeStamp" value="239" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>62</line>
+          <line>64</line>
           <option name="timeStamp" value="240" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>51</line>
+          <line>53</line>
           <option name="timeStamp" value="242" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>50</line>
+          <line>52</line>
           <option name="timeStamp" value="254" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="259" />
+          <line>150</line>
+          <option name="timeStamp" value="266" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
-          <line>87</line>
-          <option name="timeStamp" value="260" />
+          <line>149</line>
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DDOS_ATTACK.py</url>
+          <line>158</line>
+          <option name="timeStamp" value="268" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -537,7 +572,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="261" />
+      <option name="time" value="269" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -548,15 +583,95 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#552#972#0" expanded="true" />
-            <element signature="e#2050#2415#0" expanded="true" />
-            <element signature="e#2446#2817#0" expanded="true" />
-            <element signature="e#2847#3256#0" expanded="true" />
-            <element signature="e#3277#3281#0" expanded="true" />
-            <element signature="e#3307#3311#0" expanded="true" />
-            <element signature="e#3404#3547#0" expanded="true" />
-            <element signature="e#3581#3645#0" expanded="true" />
-            <element signature="e#3660#3697#0" expanded="true" />
+            <element signature="e#580#1000#0" expanded="true" />
+            <element signature="e#1021#2054#0" expanded="true" />
+            <element signature="e#2078#2443#0" expanded="true" />
+            <element signature="e#2474#2736#0" expanded="true" />
+            <element signature="e#2766#3066#0" expanded="true" />
+            <element signature="e#3087#3091#0" expanded="true" />
+            <element signature="e#3117#3121#0" expanded="true" />
+            <element signature="e#3214#3357#0" expanded="true" />
+            <element signature="e#3391#3434#0" expanded="true" />
+            <element signature="e#3516#3600#0" expanded="true" />
+            <element signature="e#3622#3657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dialog_design.pyw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#432#2326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DDOS_ATTACK.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#580#1000#0" expanded="true" />
+            <element signature="e#1021#2054#0" expanded="true" />
+            <element signature="e#2078#2443#0" expanded="true" />
+            <element signature="e#2474#2736#0" expanded="true" />
+            <element signature="e#2766#3066#0" expanded="true" />
+            <element signature="e#3087#3091#0" expanded="true" />
+            <element signature="e#3117#3121#0" expanded="true" />
+            <element signature="e#3214#3357#0" expanded="true" />
+            <element signature="e#3391#3434#0" expanded="true" />
+            <element signature="e#3516#3600#0" expanded="true" />
+            <element signature="e#3622#3657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dialog_design.pyw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#432#2326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DDOS_ATTACK.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#580#1000#0" expanded="true" />
+            <element signature="e#1021#2054#0" expanded="true" />
+            <element signature="e#2078#2443#0" expanded="true" />
+            <element signature="e#2474#2736#0" expanded="true" />
+            <element signature="e#2766#3066#0" expanded="true" />
+            <element signature="e#3087#3091#0" expanded="true" />
+            <element signature="e#3117#3121#0" expanded="true" />
+            <element signature="e#3214#3357#0" expanded="true" />
+            <element signature="e#3391#3434#0" expanded="true" />
+            <element signature="e#3516#3600#0" expanded="true" />
+            <element signature="e#3622#3657#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -565,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -581,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,14 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Программирование/Разработка/Count_Of_Win-main/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -628,34 +733,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/picture_rc.pyw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35311574">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6172107">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dialog_design.pyw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,27 +744,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6815069">
           <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dialog_design.pyw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding>
-            <element signature="e#3247#3817#0" expanded="false" />
+            <element signature="e#432#2326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/picture_rc.pyw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error.pyw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding>
+            <element signature="e#428#1874#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DDOS_ATTACK.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66952056">
-          <caret line="73" column="43" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.859375">
+          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#552#972#0" expanded="true" />
-            <element signature="e#2050#2415#0" expanded="true" />
-            <element signature="e#2446#2817#0" expanded="true" />
-            <element signature="e#2847#3256#0" expanded="true" />
-            <element signature="e#3277#3281#0" expanded="true" />
-            <element signature="e#3307#3311#0" expanded="true" />
-            <element signature="e#3404#3547#0" expanded="true" />
-            <element signature="e#3581#3645#0" expanded="true" />
-            <element signature="e#3660#3697#0" expanded="true" />
+            <element signature="e#580#1000#0" expanded="true" />
+            <element signature="e#1021#2054#0" expanded="true" />
+            <element signature="e#2078#2443#0" expanded="true" />
+            <element signature="e#2474#2736#0" expanded="true" />
+            <element signature="e#2766#3066#0" expanded="true" />
+            <element signature="e#3087#3091#0" expanded="true" />
+            <element signature="e#3117#3121#0" expanded="true" />
+            <element signature="e#3214#3357#0" expanded="true" />
+            <element signature="e#3391#3434#0" expanded="true" />
+            <element signature="e#3516#3600#0" expanded="true" />
+            <element signature="e#3622#3657#0" expanded="true" />
           </folding>
         </state>
       </provider>
